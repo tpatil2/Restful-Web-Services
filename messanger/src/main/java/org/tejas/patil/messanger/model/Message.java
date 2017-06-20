@@ -2,6 +2,10 @@ package org.tejas.patil.messanger.model;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+
 public class Message {
 
 	
@@ -9,6 +13,10 @@ public class Message {
 	private String message;
 	private Date creted;
 	private String author;
+	
+	public Message(){
+		
+	}
 	
 	public Message(long id, String message, String author) {
 		this.id = id;
