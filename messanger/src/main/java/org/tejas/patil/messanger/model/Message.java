@@ -1,6 +1,6 @@
 package org.tejas.patil.messanger.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Message {
 
@@ -10,7 +10,13 @@ public class Message {
 	private Date creted;
 	private String author;
 	
-	
+	public Message(long id, String message, String author) {
+		this.id = id;
+		this.message = message;
+		this.author = author;
+		this.creted = new Date();
+	}
+	 
 	public long getId() {
 		return id;
 	}
